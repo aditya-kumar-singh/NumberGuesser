@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundfrmyapp"
+
+    tools:context="list_multiplication.kumar.yo.aditya.numberguesser.MainActivity">
+
+
+<ImageView
+    android:layout_width="340dp"
+    android:layout_height="100dp"
+    android:src="@drawable/imgbtn1"
+    android:id="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="15dp"
+
+    android:layout_marginTop="24dp" />
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imhbtn2"
+        android:id="@+id/imageview1"
+        android:layout_gravity="center"
+
+        android:layout_alignTop="@+id/edt"
+        android:layout_alignLeft="@+id/edt"
+        android:layout_alignStart="@+id/edt"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+
+    <EditText
+        android:id="@+id/edt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter the Number"
+        android:textColorLink="#02ff1b"
+        android:layout_below="@+id/imageview1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/guessbtn"
+        android:onClick="guess" />
+
+
+</LinearLayout>
